@@ -1,0 +1,15 @@
+.gitignore
+
+# Gradle
+.gradle
+**/.gradle
+classes
+**/classes
+lib
+**/lib
+*.log
+**/*.log
+
+# Lein
+.lein-deps-sum
+**/.lein-deps-sum
