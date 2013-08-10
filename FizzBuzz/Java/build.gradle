@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+task(fizzbuzz, dependsOn: 'classes', type: JavaExec) {
+    main = 'com.jabaddon.katas.fizzbuzz.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+defaultTasks 'fizzbuzz'
