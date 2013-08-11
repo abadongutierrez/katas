@@ -1,12 +1,12 @@
 package com.jabaddon.katas.romannumerals;
 
-import org.junit.Test;
 import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
 
-public class ConverterTest {
+public class IntegerToRomanNumberTest {
 
 	private Converter converter;
 
