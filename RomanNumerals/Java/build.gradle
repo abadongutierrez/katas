@@ -8,10 +8,3 @@ repositories {
 dependencies {
 	testCompile 'junit:junit:4.11'
 }
-
-task(main, dependsOn: 'classes', type: JavaExec) {
-    main = 'com.jabaddon.katas.romannumerals.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-defaultTasks 'main'
