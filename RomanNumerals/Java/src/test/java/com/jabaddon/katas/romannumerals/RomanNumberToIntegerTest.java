@@ -73,6 +73,7 @@ public class RomanNumberToIntegerTest {
 	@Test(expected = RuntimeException.class)
 	public void convert_weird() {
 		assertThat(converter.toInteger("VX"), is(-1));
+		assertThat(converter.toInteger("XXXX"), is(-1));
 		assertThat(converter.toInteger("MMMM"), is(-1));
 	}
 }
