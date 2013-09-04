@@ -1,0 +1,19 @@
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.10.2'
+    testCompile "org.scala-lang:scala-library:2.10.2"
+}
+
+task(fizzbuzz, dependsOn: 'classes', type: JavaExec) {
+    main = 'com.jabaddon.katas.fizzbuzz.FizzBuzz'
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}
+
+defaultTasks 'fizzbuzz'
